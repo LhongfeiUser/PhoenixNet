@@ -1,0 +1,250 @@
+html {
+    font-size: 100px;
+}
+
+/*header*/
+nav {
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+nav::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    padding-top: .21rem;
+    height: .67rem;
+    background: #f54343;
+}
+
+header .logo {
+    width: 2.2rem;
+    height: .46rem;
+    margin-left: .19rem
+}
+
+header .logo img {
+    width: 100%;
+    display: block
+}
+
+/*nav*/
+.menu-list {
+    font-size: 0;
+    height: .8rem;
+    line-height: .8rem;
+    white-space: nowrap; /*强制不折行，*/
+}
+
+/*为了解决行内快元素有默认几像素的间距，所以给他的父元素写这个属性，但是写了这个属性，a的字体就没了，所以给a加上字体大小*/
+.menu-list .menu-list-link {
+    display: inline-block;
+    width: 16.66%;
+    font-size: 0.34rem;
+    text-align: center;
+    color: #6b7989;
+    height: .75rem;
+    line-height: .75rem;
+    border-bottom: .05rem solid #fff;
+}
+
+.menu-list .menu-list-link.cur {
+    border-bottom: .05rem solid #f54343;
+    color: #f54343;
+}
+
+/*swiper*/
+.swiper-container {
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(229, 229, 229, 0.6)
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0.73rem;
+}
+
+.po-img {
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    padding: .13rem .18rem .13rem .18rem;
+    font-size: 0.326rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box; /*把边框和内边距都算到盒子的宽度里面*/
+}
+
+.po-img span {
+    display: inline-block;
+    width: .7rem;
+    height: .34rem;
+    line-height: .34rem;
+    color: #fff;
+    background: #f54343;
+    margin-right: 0.12rem;
+    text-align: center;
+    font-size: 0.28rem;
+}
+
+.channelBox li {
+    padding: .21rem 0 .16rem;
+    float: left;
+    width: 50%;
+    background: #fff;
+    border-right: .04rem solid #f6f6f6;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.channelBox li:last-child {
+    border: 0;
+}
+
+.channelBox li img {
+    display: block;
+    margin: 0 auto;
+    width: 1.31rem;
+    height: .81rem;
+}
+
+.main {
+    padding: 0 .18rem;
+    background: #fff;
+    margin-top: .2rem;
+}
+
+.item .i-pic {
+    float: left;
+    width: 2.63rem;
+    height: 1.48rem;
+}
+
+.item .i-pic img {
+    width: 100%;
+    height: 100%; /*  根据外面父元素的宽高自动适应*/
+}
+
+.item .i-thumb {
+    float: right;
+    width: 4.25rem;
+    height: 1.48rem;
+    position: relative;
+}
+
+.item {
+    border-bottom: 1px solid #f6f6f6;
+    padding: .2rem 0;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+.item .i-thumb .i-title {
+    height: .9rem;
+    line-height: .4rem;
+    overflow: hidden;
+}
+
+.item .i-thumb .i-title a, .i-item .i-thumb .i-title a {
+    font-size: .34rem;
+    color: #363636;
+}
+
+.item .i-thumb .i-meta {
+    position: absolute;
+    bottom: 0;
+    font-size: .28rem;
+    color: #a6a6a6;
+}
+
+.item .i-thumb .i-label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 .1rem;
+    font-size: .22rem;
+    color: #f54343;
+    border: 1px solid #f54343;
+    -webkit-border-radius: .04rem;
+    border-radius: .04rem;
+}
+
+.wrap {
+    margin-left: -.18rem;
+}
+
+.title-Box {
+    height: 1.02rem;
+    line-height: 1.02rem;
+}
+
+.title-Box h2 {
+    font-size: .36rem;
+}
+
+.title-Box .i-link {
+    float: right;
+    font-size: 0.28rem;
+    color: #9f9f9f;
+    font-weight: normal
+}
+
+.i-item {
+    float: left;
+    width: 50%;
+    padding-left: .18rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: .3rem;
+}
+
+/*.i-item:nth-child(odd){ padding-left: 0;}*/
+.i-item .i-pic {
+    width: 100%;
+    height: 1.96rem;
+}
+
+.i-item .i-pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.i-item .i-thumb .i-title {
+    margin: .2rem 0;
+}
+
+.i-item .i-thumb .i-des {
+    font-size: .24rem;
+    color: #a6a6a6;
+}
+
+.i-item .i-thumb .i-time {
+    float: left;
+    margin-right: .3rem;
+}
+
+.i-item .i-thumb .i-time em {
+    display: inline-block;
+    width: .23rem;
+    height: .22rem;
+    background: url("../imags/x1.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    vertical-align: middle;
+}
